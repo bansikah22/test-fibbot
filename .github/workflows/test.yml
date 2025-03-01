@@ -1,9 +1,12 @@
 name: Use FibBot Custom Action
-on: [pull_request]
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   run-fibbot:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -14,3 +17,5 @@ jobs:
           enable_fib: true
           max_threshold: 1000
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+

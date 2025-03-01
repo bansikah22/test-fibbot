@@ -1,6 +1,6 @@
 # FibBot Custom Action Test Project
 
-![GitHub Actions Status](https://img.shields.io/github/workflow/status/bansikah22/test-fibbot/CI?label=Build)
+![GitHub Actions Status](https://github.com/bansikah22/test-fibbot/actions/workflows/test.yml/badge.svg)
 ![GitHub Issues](https://img.shields.io/github/issues/bansikah22/test-fibbot?color=red)
 ![Open Source](https://img.shields.io/github/license/bansikah22/test-fibbot?color=green)
 

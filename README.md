@@ -1,5 +1,9 @@
 # FibBot Custom Action Test Project
 
+![GitHub Actions Status](https://img.shields.io/github/workflow/status/bansikah22/test-fibbot/CI?label=Build)
+![GitHub Issues](https://img.shields.io/github/issues/bansikah22/test-fibbot?color=red)
+![Open Source](https://img.shields.io/github/license/bansikah22/test-fibbot?color=green)
+
 This is a test project to validate the functionality of the FibBot GitHub Action. It demonstrates how to use the FibBot action from the `bansikah22/fibbot` repository within a separate project.
 
 ## Setup
@@ -33,3 +37,10 @@ When the pull request is opened, the FibBot action should:
 ## License
 
 This project is licensed under the MIT License.
+
+---
+
+### Open Source
+
+- This repository is open-source and licensed under the [MIT License](LICENSE).
+- Contributions are welcome! Please feel free to open issues or submit pull requests to improve this project.

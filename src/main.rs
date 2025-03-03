@@ -3,4 +3,6 @@ fn main() {
     // Any additional test logic can be added here and more functions
 
     // This is a test comment another test comment
+
+    // This is a test comment for a function
 }

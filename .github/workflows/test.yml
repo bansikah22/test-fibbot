@@ -1,36 +1,23 @@
-name: Test and Run FibBot
-on: [pull_request]
+name: Test FibBot
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
 permissions:
   contents: read
   issues: write
   pull-requests: write
+
 jobs:
-  build:
+  test-fibbot:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      
-      - name: Install Rust
-        run: |
-          curl --proto '=https' --tlsv1.2 -fsSL https://sh.rustup.rs | sh -s -- -y
-        shell: bash
-      
-      - name: Set up Rust environment
-        run: rustup show
-        shell: bash
-      
-      - name: Add serde_json dependency
-        run: |
-          cargo add serde_json
-        shell: bash
-      
-      - name: Run Tests
-        run: cargo test
-        shell: bash
-      
+        
       - name: Run FibBot Action
-        uses: bansikah22/fibbot@master
+        uses: bansikah22/fibbot@master  
         with:
           enable_fib: true
           max_threshold: 1000

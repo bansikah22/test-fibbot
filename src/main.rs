@@ -4,5 +4,5 @@ fn main() {
 
     // This is a test comment another test comment
 
-    // This is a test comment for a function
+    // A test function
 }

@@ -6,7 +6,6 @@ fn main() {
         println!("{}", i);
     }
     
-
     // Test the FibBot action
     fn fibonacci_sequence(n: usize) -> Vec<u32> {
         let mut sequence = vec![0, 1];
@@ -17,3 +16,4 @@ fn main() {
         sequence
     }
 }
+
